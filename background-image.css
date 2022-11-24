@@ -1,0 +1,37 @@
+.bg-image-large{
+background-image: url('large.jpeg');
+background-size: contain;
+background-repeat: no-repeat;
+background-position: bottom;
+}
+
+.bg-image-small{
+    background-image: url('small.png');
+    background-repeat: no-repeat;
+    background-color: rgb(70, 157, 223);
+}
+
+.box{
+width: 180px;
+height: 45px;
+margin: 8px 0;
+border: 0.1rem solid;
+}
+
+.repeat{
+    background-repeat: repeat;  /* ;default */
+}
+
+.no-repeat{
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: 20px 10px;
+}
+
+.repeat-x{
+    background-repeat: repeat-x;
+}
+
+.repeat-y{
+    background-repeat: repeat-y;
+}

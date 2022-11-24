@@ -1,0 +1,32 @@
+.para1{
+    padding: 16px; /* this will applied on all sides(top,bottom,left,right) */
+    border: 2px solid darkblue;
+}
+
+.para2{
+    border:2.4px solid salmon;
+    padding: 4px 18px;    /* this will apply 4px padding to top and bottom and 18px padding to left and right */
+}
+
+.para3{
+    padding: 10px 20px 30px 40px;
+    border: 2px solid slateblue;
+}
+
+.para4{
+    padding-top: 12px;
+    padding-left: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    border: 2px solid magenta;
+}
+
+span{
+    margin: 20px;
+    padding:20px;
+    height: 80px;
+    width: 50px;
+    background-color: lightblue;
+    display: inline-block;
+    border:2px solid blue;
+}
