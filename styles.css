@@ -1,0 +1,24 @@
+h1{
+    color: red;
+}
+li{
+    color: steelblue;
+    list-style-type: gujarati;
+}
+
+.special{
+    color: orange;
+    font-weight: bold;
+}
+
+li.special{
+    color: blueviolet;
+}
+
+li em{
+    color: rebeccapurple;
+}
+
+h1+p{
+    font-size: 200%;
+}
