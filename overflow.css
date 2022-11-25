@@ -1,0 +1,48 @@
+.box{
+    height: 150px;
+    border: 1px solid;
+    width: 300px;
+}
+
+p{
+    font-weight: bolder;
+    color: red;
+    border:2px dashed steelblue;
+    padding: 4px;
+}
+
+.para{
+margin-top: 2rem;
+width: 8rem;
+border: 1px solid purple;
+height: 3rem;
+overflow:hidden;
+}
+
+.para p{
+    all: initial;
+font-size: 250%;
+
+}
+
+.word{
+    margin-top: 2rem;
+    border: 1px solid darkblue;
+    width: 5rem;
+    font-size: 250%;
+    overflow-y: scroll;
+}
+
+.overflow-images{
+    margin-top: 2rem;
+    display: flex;
+    height: 270px;
+    border: 2px solid gray;
+    padding: 4px;
+    overflow: scroll;
+}
+
+.overflow-images img{
+    margin: 0 8px 8px 0;
+    border: 2.5px dashed rebeccapurple;
+}
