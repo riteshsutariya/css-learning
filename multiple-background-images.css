@@ -1,0 +1,9 @@
+.box{
+    height: 150px;
+    width: 350px;
+    border: 1px dashed;
+    background-image: url(large.jpeg),url(small.png);
+    background-repeat: no-repeat, repeat-x;
+    background-position: 10px 20px,top right;
+    background-size: contain, auto;
+}

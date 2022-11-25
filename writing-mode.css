@@ -1,0 +1,12 @@
+.vertical-rl{
+writing-mode: vertical-rl;
+}
+h1{
+    background-color: black;
+color: white;
+padding: 4px;
+}
+
+.vertical-lr{
+    writing-mode: vertical-lr;
+}
