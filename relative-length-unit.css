@@ -1,0 +1,33 @@
+html{
+    /* font-size: 20px; */   /* if you uncomment this all box's size will be affected */
+}
+
+.box{
+    width: 20em; /* 16 * 20= 320px */
+    height: 16em /* 16 * 16= 144px */;
+    border: 1px solid black;
+    font-size: 1em; /* 16px * 1=16px */
+}
+p{
+    color: red;
+    border: 1px solid goldenrod;
+    font-size: 2em;  /* 16px(1em) * 2=32px */
+    width: 4em;   /* 32 * 4 = 128px */
+    margin-left: .5rem;  /* 24px(2em) * 0.5=12px */
+}
+
+.box-2{
+    margin-top: 1rem;
+    width: 50vw;
+    height: 50vh;
+    background-color: aqua;
+    border: 1px solid;
+}
+
+.box-3{
+    margin-top: 1rem;
+    font-size: 2.5rem;  /* 16*2.5 = 40px */
+    width: 25rem;  /* 16*25 = 400px */
+    height: 20rem;   /* 16*20 = 320px */
+    border: 2px dashed slateblue;
+}
