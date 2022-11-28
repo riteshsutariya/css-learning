@@ -26,8 +26,12 @@ p{
 
 .box-3{
     margin-top: 1rem;
-    font-size: 2.5rem;  /* 16*2.5 = 40px */
+    font-size: 1.6rem;  /* 16*2.5 = 40px */
     width: 25rem;  /* 16*25 = 400px */
     height: 20rem;   /* 16*20 = 320px */
     border: 2px dashed slateblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: steelblue;
 }
