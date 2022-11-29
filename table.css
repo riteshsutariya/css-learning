@@ -20,6 +20,7 @@ thead th:nth-child(4){
 }
 th,td{
     padding: 20px;
+    border: 2px solid white;
 }
 html {
     font-family: "helvetica neue", helvetica, arial, sans-serif;
