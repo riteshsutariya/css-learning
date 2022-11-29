@@ -1,0 +1,67 @@
+/* General page styles */
+
+body {
+    margin: 0;
+  }
+  
+  html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 10px;
+    background-color: #ccc;
+  }
+  
+  /* card container style */
+  .card{
+    width: 400px;
+    height: 220px;
+    background-color: rgba(255, 8, 0, 0.964);
+    border: 2px dashed purple;
+    border-radius: 5px;
+  }
+
+  /* header and footer style */
+header{
+background-image: linear-gradient(to right,rgb(0,0,0,0.3),rgb(0,0,0,0.1));
+}
+footer{
+    background-image: linear-gradient(to right,rgb(0,0,0,0.1),rgb(0,0,0,0.3));
+}
+
+.round-corners{
+    border-radius: 5px;
+}
+
+img{
+    float: right;
+    max-height: 100%;
+}
+
+header,footer{
+  box-sizing: border-box;
+  padding: 1em;
+  height: 5em;
+}
+
+h2,p{
+    margin: 0;
+}
+
+h2{
+    font-size: 2em;
+    line-height: 150%;
+}
+
+  /* main business card and content */
+  article{
+height: 12em;
+background-color: rgba(144, 12, 5, 0.6);
+  }
+
+  footer p{
+    font-size: 1.5em;
+    line-height: 150%;
+  }
+
+  article p{
+    padding: 12px;
+  }
