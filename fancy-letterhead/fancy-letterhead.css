@@ -39,8 +39,36 @@
   }
   
   /* Your CSS below here */
+
+  .letter {
+    background: rgb(255, 255, 255);
+    width: 210mm;
+    margin: 0 auto;
+    border-top: 1mm solid red;
+    border-bottom: 1mm solid red;
+  }
+  h1 {
+    background-image: url('logo.png');
+  }
+  
+  .filter {
+    /* filter: drop-shadow(4px 3px 3px rgba(0,0,0,0.8)); */
+    -webkit-filter: drop-shadow(4px 3px 3px rgba(0,0,0,0.8));
+  }
+
   article{
-    background:url(top.png) no-repeat local,url(bottom.png) no-repeat 0% 100% local,linear-gradient(to bottom,#fff 20%,#fff 80%, rgba(255, 230, 230, .1 ));  
-    border-top:5px solid #b30000;
-    border-bottom:5px solid #b30000;  
-}
+    margin: 0;
+    background: url(top.png) no-repeat center top,url(bottom.png) no-repeat center bottom;
+    background-size: 100%;
+  }
+
+  .letter {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(213, 213, 213, 0.6) 0%,
+        rgba(64, 64, 64, 0) 20%,
+        rgba(64, 64, 64, 0) 80%,
+        rgba(213, 213, 213, 0.6) 100%
+
+    );
+  }
