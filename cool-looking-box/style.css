@@ -1,5 +1,28 @@
+
 html {
-    font-family: sans-serif;
-  }
-  
-  /* Your CSS below here */
+  font-family: sans-serif;
+}
+
+/* Your CSS below here */
+div{
+  width:250px;
+  height:200px;
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:2px solid #8b0000;
+  margin-left:40%;
+  background-color:red;
+  border-radius:6px;
+  background:linear-gradient(135deg,rgb(0,0,0,0),rgb(0,0,0,0.2) 30%,rgb(0,0,0,.2) 100%) red;
+  box-shadow: 3px 3px 3px rgb(67,67,67),inset 1px 1px 2px rgb(255,255,255,.65) 
+    ,inset -2px -2px 1px rgb(0,0,0,.66);
+}
+
+p{
+  font-size:1.1rem;  /* default font size of root 
+  element is 16px so 1.1 rem = 1.1*16= 17.6px */
+  color:white;
+  text-shadow:1.5px 1.5px black;
+}
