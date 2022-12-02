@@ -1,0 +1,41 @@
+html{
+    font-size: 10px;
+    font-family: Helvetica,Arial, sans-serif;
+}
+h2{
+    font-size: 2rem;
+}
+
+ul.ol.dl,p{
+    font-size: 1.5rem;
+}
+
+li,p{
+    line-height: 1.5;
+}
+
+dd,dt{
+    line-height: 1.5;
+}
+
+dt{
+    font-weight: bold;
+}
+
+ol{
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    border: 2px solid rebeccapurple;
+}
+
+li{
+    border: 1px solid black;
+}
+
+ul{
+    list-style:  url(logo.png) inside;
+}
+
+.number{
+    list-style-type:decimal;
+}
