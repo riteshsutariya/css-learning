@@ -1,0 +1,127 @@
+/* font-size */
+html{
+    font-size: 18px;
+}
+p{
+    font-size: 1.2rem;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* fonr-style */
+.italic{
+    font-style: italic;
+}
+
+.oblique{
+    font-style: oblique;
+}
+
+.normal{
+    font-style: normal;
+}
+
+/* color */
+.purple{
+    color:purple;
+}
+
+/* font-weight */
+.bold{
+    font-weight: bold;
+}
+
+.lighter{
+    font-weight: lighter;
+}
+
+.bolder{
+    font-weight: bolder;
+}
+
+.w-600{
+    font-weight: 600;
+}
+
+.w-100{
+    font-weight: 300;
+}
+
+/* text-tranform */
+.uppercase{
+    text-transform: uppercase;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.none{
+text-transform: none;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.dashed{
+    text-decoration: dashed;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.overline{
+    text-decoration: overline;
+}
+
+.text-shadow{
+    text-shadow: 3px 3px 2px purple;
+}
+
+.multiple-shadow{
+    text-shadow: 3px 3px 3px rgb(10, 217, 224), 5px 5px 2px red;
+}
+
+/* text-align */
+.align-left{
+    text-align: left;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.align-right{
+    text-align: right;
+}
+
+.align-justify{
+    text-align: justify;
+}
+
+.box{
+    border:1px dashed purple;
+    margin-bottom: 2rem;
+}
+
+/* line-height */
+.lh-1{
+line-height: 1;
+color: initial;
+}
+
+.lh-1pt6{
+    line-height: 1.6;
+    color: initial;
+}
+
+.para2::first-letter{
+    letter-spacing: 14px;
+    word-spacing: 4px;
+}
