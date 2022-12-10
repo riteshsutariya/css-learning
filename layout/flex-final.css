@@ -1,0 +1,103 @@
+.container{
+    border: 2px solid;
+    display: flex;
+    margin: 1rem 0;
+    overflow: auto;
+}
+
+.item{
+    padding:10px;
+    margin:10px;
+    border: 1.5px dashed purple;
+}
+
+.vh-20{
+  height: 20vh;
+}
+
+/*flex direction*/
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-row-reverse{
+    flex-direction: row-reverse;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-column-reverse{
+    flex-direction: column-reverse;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+    /* flex-wrap:wrap-reverse */
+}
+
+div.flex-wrap div{
+    flex:250px;
+}
+
+/*justify-content*/
+
+.justify-space-between{
+    justify-content: space-between;
+}
+
+.justify-space-around{
+    justify-content: space-around;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-felx-start{
+    justify-content: flex-start;
+}
+
+.justify-flex-end{
+    justify-content: flex-end;
+}
+
+/*align-items*/
+.align-center{
+    align-items: center;
+}
+
+.align-baseline{
+    align-items: baseline;
+}
+
+.align-flex-start{
+    align-items: flex-start;
+}
+
+.align-flex-end{
+    align-items: flex-end;
+}
+
+.align-stretch{
+    align-items: stretch;
+}
+
+/*align self*/
+
+.align-self-flex-start{
+    align-self: flex-start;
+}
+
+.align-self-flex-end{
+    align-self: flex-end;
+}
+
+.align-self-center{
+    align-self: center;
+}
+
+.align-self-stretch{
+    align-self: stretch;
+}
