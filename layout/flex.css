@@ -1,0 +1,31 @@
+.wrapper{
+border: 2px solid purple;
+padding: 10px;
+margin-bottom: 2rem;
+}
+
+.box{
+    border:1px solid black;
+    padding: 4px;
+    width: 100px;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;   /*default value*/
+}
+
+.flex-row{
+    flex-direction: row; 
+}
+
+.box1{
+    height: 250px;   /*this will strech all elements to 250px or more than 250px if any other child having more height*/
+}
+
+.wrapper>div{
+    flex: 1;
+}
