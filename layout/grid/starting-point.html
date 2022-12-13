@@ -21,13 +21,41 @@
         }
 
         .container {
+            border: 2px solid;
             display: grid;
             /* grid-template-columns: 200px 200px 200px; */
+
             /* using fr unit */
-            grid-template-columns: 2fr 2fr 0.5fr;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+
+            /* as many columns as will fit */
+            grid-template-columns: repeat(auto-fill, minmax(195px, auto));
+
             /* repeating track list */
             /* grid-template-columns: repeat(3, 1fr); */
+
+            /* grid-template-rows: 1fr 1fr 1fr; */
+        }
+
+        /* gap */
+        .gap-20 {
             gap: 20px;
+        }
+
+        .row-gap-20 {
+            row-gap: 20px;
+        }
+
+        .column-gap-20 {
+            column-gap: 20px;
+        }
+
+        .grid-auto-rows-100px {
+            grid-auto-rows: minmax(100px, auto);
+        }
+
+        .grid-auto-columns-200px {
+            grid-auto-columns: minmax(200px, auto);
         }
     </style>
 </head>
@@ -35,14 +63,29 @@
 <body>
     <h1>Simple grid example</h1>
 
-    <div class="container">
-        <div>One</div>
+    <div class="container row-gap-20 column-gap-20 grid-auto-rows-100px grid-auto-columns-200px">
+        <div>One .We've only specified column tracks so far, yet rows are being created to hold our content. This is an
+            example of the explicit versus the implicit grid. The explicit grid is the one that you create using
+            grid-template-columns or grid-template-rows. The implicit grid extends the defined explicit grid when
+            content is placed outside of that grid, such as into our rows by drawing additional grid lines.
+            One .We've only specified column tracks so far, yet rows are being created to hold our content. This is an
+            example of the explicit versus the implicit grid. The explicit grid is the one that you create using
+            grid-template-columns or grid-template-rows. The implicit grid extends the defined explicit grid when
+            content is placed outside of that grid, such as into our rows by drawing additional grid lines.</div>
         <div>Two</div>
         <div>Three</div>
         <div>Four</div>
-        <div>Five</div>
+        <div>Five
+            One .We've only specified column tracks so far, yet rows are being created to hold our content. This is an
+            example of the explicit versus the implicit grid. The explicit grid is the one that you create using
+            grid-template-columns or grid-template-rows. The implicit grid extends the defined explicit grid when
+            content is placed outside of that grid, such as into our rows by drawing additional grid lines.
+        </div>
         <div>Six</div>
-        <div>Seven</div>
+        <div>Seven .We've only specified column tracks so far, yet rows are being created to hold our content. This is
+            an example of the explicit versus the implicit grid. The explicit grid is the one that you create using
+            grid-template-columns or grid-template-rows. The implicit grid extends the defined explicit grid when
+            content is placed outside of that grid, such as into our rows by drawing additional grid lines.</div>
     </div>
 
 </body>
