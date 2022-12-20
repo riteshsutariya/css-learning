@@ -1,0 +1,22 @@
+p{
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+        width: 400%;
+    }
+    75%{
+        font-size: 300%;
+        color: blueviolet;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
