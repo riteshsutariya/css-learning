@@ -1,0 +1,28 @@
+p{
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+@keyframes slidein{
+    0%{
+        margin-left: 0%;
+        width: 100%;
+        font-size: 150%;
+        color: rgb(215, 87, 13);
+    }
+    75%{
+        font-size: 300%;
+        color: blueviolet;
+    }
+    100%{
+        font-size: 240%;
+        margin-left: 60%;
+        width: 300%;
+        color: rgba(25, 227, 7, 0.813);
+        border-bottom: 2px solid rgb(44, 53, 224);
+    }
+}
+
