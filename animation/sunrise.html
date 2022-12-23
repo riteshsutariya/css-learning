@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise animation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background: skyblue;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sun {
+            height: 12rem;
+            width: 12rem;
+            background: orange;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -20%;
+            animation: sunrise linear 5s forwards infinite alternate;
+        }
+
+        .shadow {
+            height: 12rem;
+            width: 12rem;
+            /* background: orange; */
+            border-radius: 50%;
+            position: absolute;
+            bottom: -20%;
+            animation: shadow linear 5s forwards infinite alternate;
+            z-index: 255;
+        }
+
+        @keyframes sunrise {
+            0% {
+                bottom: -20%;
+            }
+
+            20% {
+                bottom: -12%;
+            }
+
+            40% {
+                bottom: -4%;
+            }
+
+            60% {
+                bottom: 4%;
+            }
+
+            80% {
+                bottom: 12%;
+            }
+
+            100% {
+                bottom: 20%;
+            }
+        }
+
+        @keyframes shadow {
+
+            0% {
+                bottom: -20%;
+            }
+
+            20% {
+                bottom: -12%;
+                box-shadow: 1px -2px 8px rgb(247, 149, 12);
+            }
+
+            40% {
+                bottom: -4%;
+                box-shadow: 1px -3px 9px rgb(254, 149, 2);
+            }
+
+            60% {
+                bottom: 4%;
+                box-shadow: 1px -4px 10px rgba(254, 149, 2, 0.922);
+            }
+
+            80% {
+                bottom: 12%;
+                box-shadow: 1px -5px 11px rgb(254, 199, 2);
+            }
+
+            100% {
+                bottom: 20%;
+                box-shadow: 1px -6px 12px rgba(254, 204, 2, 0.871);
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="sun"></div>
+        <div class="shadow"></div>
+    </div>
+</body>
+
+</html>

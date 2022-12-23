@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinner</title>
+    <style>
+        .container {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .spinner {
+            height: 35px;
+            width: 35px;
+            border: 2px solid goldenrod;
+            animation: spinner 2s infinite linear;
+        }
+
+        @keyframes spinner {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            40% {
+                border-color: goldenrod;
+            }
+
+            100% {
+                border-color: purple;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="spinner">
+
+        </div>
+    </div>
+</body>
+
+</html>
