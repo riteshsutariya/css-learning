@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>IPhone tranform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+        }
+
+        /*navbar*/
+        .navbar {
+            background-color: rgba(29, 29, 31, 0.72);
+            font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            /* border: 2px dotted gray; */
+            padding-bottom: 14px;
+        }
+
+        .navbar>nav {
+            color: white;
+            display: grid;
+            /* display: flex; */
+            justify-content: space-between;
+            margin: 0px 315px;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        .navbar>nav>ul {
+            flex: 2;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 18px;
+            font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        }
+
+        .navbar>nav>h3 {
+            margin: 14px 0 -14px 0;
+        }
+
+        /*container*/
+        .container {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 2fr 1fr;
+            grid-template-areas: "image nav";
+            gap: 50px;
+            margin: 0px 312px;
+        }
+
+        .container ul {
+            list-style-type: none;
+            flex-direction: column;
+            line-height: 1.8rem;
+            letter-spacing: 0.11em;
+            font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+            color: gray;
+            padding-top: 18px;
+        }
+
+        .container ul li:hover {
+            color: white;
+            cursor: pointer;
+        }
+
+
+        .var-item {
+            margin: 20px 0px 0px;
+        }
+
+        .nav-item {
+            transition: color ease 2s;
+        }
+
+        .nav-item:hover {
+            cursor: pointer;
+            color: rgb(244, 232, 232);
+        }
+
+        .phone-container {
+            grid-area: image;
+            justify-self: end;
+            align-self: end;
+        }
+
+        .phone-container>img {
+            max-width: 406px;
+            max-height: 1022px;
+            transform: scale(0.7);
+            height: auto;
+            transition: transform 3s ease 0.5s;
+        }
+
+        .phone-container>img:hover {
+            transform: scale(0.9);
+        }
+
+        .varients {
+            grid-area: nav;
+            align-self: center;
+        }
+
+        /*button*/
+        .buy-button {
+            padding: 7px 14px;
+            background-color: #0071E3;
+            outline: none;
+            border: none;
+            border-radius: 16px;
+            color: white;
+            font-size: 0.7em;
+            cursor: pointer;
+            transition: transform ease 1s;
+        }
+
+        .buy-button:hover {
+            transform: scale(1.2);
+            background-color: #027df8;
+        }
+
+        @media screen and (max-width:500px) {
+            .navbar>nav {
+                margin: 0;
+                flex-direction: column;
+                display: flex;
+                max-width: 100%;
+                gap: 2rem;
+                align-items: flex-start;
+                padding-left: 1rem;
+            }
+
+            .navbar>nav>h3 {
+                justify-content: flex-start;
+            }
+
+            .navbar>nav>ul {
+                flex: 2;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                justify-content: space-evenly;
+                padding-top: 18px;
+                gap: 1em;
+                font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            }
+
+            .container {
+                margin: 24px 0;
+                grid-template-columns: 2fr 1fr;
+                grid-template-areas: "nav nav"
+                    "image image";
+            }
+
+            .phone-container {
+                justify-self: center;
+                align-self: center;
+            }
+
+            .varients {
+                justify-self: center;
+            }
+
+            .phone-container>img {
+                max-width: 203px;
+                max-height: 511px;
+                transform: scale(0.7);
+                height: auto;
+                transition: transform 3s ease 0.5s;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <h3>Iphone 14 Pro</h3>
+            <ul>
+                <li class="nav-item">Overview</li>
+                <li class="nav-item">Switching to Iphone</li>
+                <li class="nav-item">Tech Specs</li>
+                <li class="nav-item"> <button class="buy-button">Buy</button></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="phone-container">
+            <img src="iphone.jpeg" alt="iPhone" srcset="">
+        </div>
+        <div class="varients">
+            <ul>
+                <li class="var-item">Purple</li>
+                <li class="var-item">Gold</li>
+                <li class="var-item">Silver</li>
+                <li class="var-item">Space Black</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
