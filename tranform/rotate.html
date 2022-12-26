@@ -5,46 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Translate</title>
+    <title>Rotate</title>
     <style>
         .box {
             height: 100px;
             width: 180px;
-            border: 2px dashed purple;
+            border: 3px dashed purple;
+            margin: 4rem 0;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
             transition: 2s transform ease 1s;
-            margin: 2rem 0;
+            background: url('iphone.jpeg') no-repeat center;
+            background-size: cover;
+            color: white;
+            font-weight: bolder;
         }
 
         .box1:hover {
-            transform: translate(50px, 40px);
+            transform: rotate(180deg)
         }
 
         .box2:hover {
-            transform: translateX(45px);
+            transform: rotateX(360deg)
         }
 
         .box3:hover {
-            transform: translateY(50px);
+            transform: rotateY(180deg)
         }
 
-        /*for 3d transform*/
+        /*for 3D tranform*/
         .box4:hover {
-            transform: translatez(42px);
+            transform: rotateZ(180deg);
         }
     </style>
 </head>
 
 <body>
-    <div class="box box1">
+    <div class="box1 box">
         Box1 content
     </div>
-    <div class="box box2">
+    <div class="box2 box">
         Box2 content
     </div>
-    <div class="box box3">
+    <div class="box3 box">
         Box3 content
     </div>
-    <div class="box box4">
+    <div class="box4 box">
         Box4 content
     </div>
 </body>
