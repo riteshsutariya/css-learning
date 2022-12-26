@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranform</title>
+    <style>
+        .container {
+            text-align: center;
+        }
+
+        .img1 {
+            transform: rotate(90deg);
+        }
+
+        .img2 {
+            transform: translate(15px, 25px);
+        }
+
+        .img3 {
+            transform: scale(1.2);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            margin-left: 1rem;
+            background-position: center;
+        }
+
+        div {
+            margin-bottom: 2rem;
+            border: 1px solid rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div><img src="logo.png" class="img1" alt="" srcset=""></div>
+        <div><img src="logo.png" class="img2" alt="" srcset=""></div>
+        <div><img src="logo.png" class="img3" alt="" srcset=""></div>
+        <div><img src="logo.png" class="img4" alt="" srcset=""></div>
+        <div><img src="logo.png" class="img5" alt="" srcset=""></div>
+        <div><img src="logo.png" class="img6" alt="" srcset=""></div>
+    </div>
+</body>
+
+</html>
