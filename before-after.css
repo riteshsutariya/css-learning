@@ -1,0 +1,21 @@
+.box1 p::before{
+    content: '"';
+}
+.box1 p::after{
+    content: '."';
+}
+
+p::after{
+    content: '.';
+}
+
+.box3 p{
+    overflow: hidden;
+}
+
+.box3 p::before{
+    content: url(logo.png);
+    background-size: contain;
+    display: inline-block;
+    transform: scale(0.5);
+}
